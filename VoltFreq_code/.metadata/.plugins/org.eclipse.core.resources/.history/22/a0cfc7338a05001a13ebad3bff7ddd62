@@ -1,0 +1,35 @@
+/*
+ *  measure_freq.c
+ *  Created on: 11, 10, 2019
+ *  Author:     Mohamed Fayez
+ */
+
+#include "lcd.h"
+#include "icu.h"
+#include "pulse_measure.h"
+#include "delay.h"
+
+int main()
+{
+	/* Initialize both the LCD and ICU driver */
+	LCD_init();
+	pulse_init();
+
+	while(1)
+	{
+		if( get_pulse_read() )
+		{
+			LCD_clearScreen();
+			LCD_displayString("volt = "); //tack care from V_reference in driver
+			LCD_displayNumber(mili_volt);
+			LCD_displayString(" mV");
+
+			LCD_goToRowColumn(1,0);
+			LCD_displayString("freq = ");
+			LCD_displayNumber(frequency);
+			LCD_displayString(" HZ");
+
+			DELAY_ms(350);
+		}
+	}
+}

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;Volt_Freq_meter/pulse_meagure.c&apos; to &apos;pulse_measure.c&apos;" description="Rename resource &apos;pulse_meagure.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="pulse_meagure.c" name="pulse_measure.c" stamp="1570857962816" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;Volt_Freq_meter/pulse_meagure.h&apos; to &apos;pulse_measure.h&apos;" description="Rename resource &apos;pulse_meagure.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="pulse_meagure.h" name="pulse_measure.h" stamp="1570857997816" updateReferences="true"/>
+</session>
